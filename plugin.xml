@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-codeplay-browsertab" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>browsertab</name>
+	<js-module name="browsertab" src="www/browsertab.js">
+		<clobbers target="cordova.plugins.browsertab" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="browsertab"><param name="android-package" value="cordova.plugin.codeplay.browsertab.browsertab" /></feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/browsertab.java" target-dir="src/cordova/plugin/codeplay/browsertab/browsertab" />
+		
+		<framework custom="true" src="src/android/browsertab-sdk.gradle" type="gradleReference" />
+		
+	</platform>
+</plugin>
