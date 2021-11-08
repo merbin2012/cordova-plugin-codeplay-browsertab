@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-codeplay-browsertab",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "<h2>Git URL</h2>\r https://github.com/merbin2012/cordova-plugin-codeplay-browsertab",
   "cordova": {
     "id": "cordova-plugin-codeplay-browsertab",
